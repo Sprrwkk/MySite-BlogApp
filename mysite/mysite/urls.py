@@ -17,8 +17,9 @@ Including another URLconf
 #wzorce adresów URL, każdy zdefiniowany adres url jest zmapowany na widok
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('blog/', include('blog.urls', namespace='blog')),
 ]
