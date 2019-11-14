@@ -124,3 +124,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     '/var/www/static/',
 ]
+
+#email settings
+EMAIL_HOST = 'smtp.mail.yahoo.com'
+EMAIL_HOST_USER = 'sparrowekk@yahoo.com'
+EMAIL_HOST_PASSWORD = 'lgjv gblp dmtw znld'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
