@@ -9,6 +9,7 @@
     </p>
     {{ post.body|linebreaks }}
     <p>
+
         <a href='{% url "blog:post_share" post.id %}'>Udostępnij post</a>
     </p>
     <p>Liczba komentarzy</p>
@@ -39,9 +40,5 @@
             <p><input type="submit" value="Dodaj komentarz"></p>
         </form>
     {% endif %}
-
-
-
-
 {% endblock %}
 
